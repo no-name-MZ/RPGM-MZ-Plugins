@@ -38,6 +38,7 @@
 * @desc The text displayed on the button in the main menu.
 * @default Lewd
 * @parent Scene_Menu
+*
 * @param MenuButtonFontSize
 * @text Menu Button Font Size
 * @desc Font size for the menu button.
