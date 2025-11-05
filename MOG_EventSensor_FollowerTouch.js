@@ -1,3 +1,6 @@
+//=============================================================================
+// Follower Touch for Moghunter Event Sensor
+//=============================================================================
 /*:
  * @target MV MZ
  * @plugindesc Requires: "MOG_EventSensor.js". Follower Touch for Moghunter Event Sensor.
@@ -34,15 +37,13 @@
     if (!this.page() || !hasFollowerTouchTag(this)) return;
     if ($gameMap.isEventRunning()) return;
 
-    const followers = $gamePlayer.followers().data();
-    for (const f of followers) {
-      const dx = Math.abs(f.x - this.x);
-      const dy = Math.abs(f.y - this.y);
-
-      // Trigger if follower is on the same tile or directly adjacent (N, S, E, W)
-      if ((dx + dy) === 1 || (dx === 0 && dy === 0)) {
-        this.start();
-        break;
+  const allActors = [$gamePlayer, ...$gamePlayer.followers().data()];
+  for (const actor of allActors) {
+    const dx = Math.abs(actor.x - this.x);
+    const dy = Math.abs(actor.y - this.y);
+    if ((dx + dy) === 1 || (dx === 0 && dy === 0)) {
+      this.start();
+      break;
       }
     }
   };
