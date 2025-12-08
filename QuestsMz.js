@@ -2,7 +2,7 @@
  * @target MZ
  * @plugindesc Quest System
  * @author aura-dev (original) / no__name (edit)
- * @url 
+ * @url https://github.com/no-name-MZ/RPGM-MZ-Plugins/blob/main/QuestsMz.js
  * 
  * @help QuestsMz.js
  * 
