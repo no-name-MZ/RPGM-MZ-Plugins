@@ -34,10 +34,18 @@
  * QuestManager.getObjectiveStatus("UniqueQuestID", "ObjectiveID")
  * -> return -1 (not started), 0 (Ongoing), 1 (Completed), 2 (failed)
  * 
+ * QuestManager.isQuestStarted("UniqueQuestID")
+ * QuestManager.isQuestCompleted("UniqueQuestID")
+ * QuestManager.isQuestFailed("UniqueQuestID")
+ * QuestManager.isObjectiveStarted("UniqueQuestID", "ObjectiveID")
+ * QuestManager.isObjectiveCompleted("UniqueQuestID", "ObjectiveID")
+ * QuestManager.isObjectiveFailed("UniqueQuestID", "ObjectiveID")
+ * -> True/False statements
+ * 
  * Original work can be found here:
  * https://gitgud.io/auragamedev/auramz/-/blob/develop/AuraMZ_Template_Game/js/plugins/auramz/quests.js
- * 
- * All auramz/ and auramzui/ plugins are free to use for commercial and non-commercial projects.
+ * All auramz/ and auramzui/ plugins are free to use for commercial and
+ * non-commercial projects.
  *
  * @command addQuest
  * @text Add Quest
