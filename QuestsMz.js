@@ -27,13 +27,19 @@
  *  }
  *}
  * 
- * SCRIPT CALL:
+ * PLUGIN COMMANDS:
+ * Add Quest: Add a quest and its objective.
+ * Add Objective : Add an objective to a quest.
+ * Set Quest Status : Change Quest Status
+ * Set Objective Status : Change Objective Status
+ * Override 'x': Override string of 'x'
+ * Reset Quest: Purge Quest data and restart Quest 
+ * 
+ * SCRIPT CALLS:
  * QuestManager.getQuestStatus("UniqueQuestID")
  * -> return -1 (not started), 0 (Ongoing), 1 (Completed), 2 (failed)
- * 
  * QuestManager.getObjectiveStatus("UniqueQuestID", "ObjectiveID")
  * -> return -1 (not started), 0 (Ongoing), 1 (Completed), 2 (failed)
- * 
  * QuestManager.isQuestStarted("UniqueQuestID")
  * QuestManager.isQuestCompleted("UniqueQuestID")
  * QuestManager.isQuestFailed("UniqueQuestID")
